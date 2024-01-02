@@ -1,0 +1,154 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Hobby Survey Form</h1>
+        <p id="description">Thank you for helping us improve the platform</p>
+      </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name"
+                 type="text"
+                 name="name"
+                 placeholder="Enter your name"
+                 class="form-control"
+                 required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email"
+                 type="email"
+                 name="email"
+                 placeholder="Enter your Email"
+                 class="form-control"
+                 required/>
+          </div>
+        <div class="form-group">
+          <label id="number-label" for="number">
+            Age<span class="clue">(optional)</span></label>
+          <input id="number"
+                 type="number"
+                 name="age"
+                 min="18"
+                 max="99"
+                 placeholder="Age"
+                 class="form-control"/>
+        </div>
+        <div class="form-group">
+          <p>Which option describes your favorite hobby?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select hobby</option>
+            <option value="reading">Reading</option>
+            <option value="painting">Painting</option>
+            <option value="drawing">Drawing</option>
+            <option value="writing">Writing</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend your hobby to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              type="radio"
+              class="input-radio"
+              value="absolutely"
+              checked
+              />Absolutely</label>
+            <input
+              name="user-recommend"
+              type="radio"
+              class="input-radio"
+              value="maybe"
+              />Maybe</label>
+            <input
+              name="user-recommend"
+              type="radio"
+              class="input-radio"
+              value="no"
+              />No</label>
+        </div>
+        <div class="form-group">
+          <p>What do like most about your hobby?</p>
+            <span class="clue">(Check all that apply)</span>
+          </p>
+            <label>
+              <input
+                name="prefer"
+                type="checkbox"
+                class="input-checkbox"
+                value="relaxing"/>
+                Relaxing</label>
+              <input
+                name="prefer"
+                type="checkbox"
+                class="input-checkbox"
+                value="challenging"/>
+                Challenging</label>
+              <input
+                name="prefer"
+                type="checkbox"
+                class="input-checkbox"
+                value="rewarding"/>
+                Rewarding</label>
+              <input
+                name="prefer"
+                type="checkbox"
+                class="input-checkbox"
+                value="skill-building"/>
+                Skill Building</label>
+            </div>
+            <div class="form-group">
+              <p>Any comments or suggestions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </body>
+    </html>
+
+** end of undefined **
+
+** start of undefined **
+/* css */
+body {font-family: 'Papyrus', fantasy;
+      font-size: 18px;
+      margin: auto;
+      padding-top: 5%;
+      background-color: lightblue;
+      text-align: center;
+      }
+input,
+button,
+select,
+textarea {font-family: 'Papyrus', fantasy;
+          margin: 0;
+          }
+.clue {font-size: 12px;}
+.input-textarea {min-height: 120px;
+                 width: 50%;
+                 }
+.submit-button {width: 100px;
+                background-color: lightgreen;
+                border-radius: 2px;
+                margin: 5px;}
+
+
+** end of undefined **
